@@ -8,6 +8,9 @@ $usern = $_COOKIE['username']; // Retrieve the username from the session
 $query = "SELECT id, content, date FROM web_app.posts";
 $posts = mysqli_query($conn, $query);
 
+
+// For delete action
+// The post will delete if the user clicks the delete button
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 

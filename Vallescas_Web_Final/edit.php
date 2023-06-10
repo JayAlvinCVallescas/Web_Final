@@ -2,6 +2,8 @@
 require './config/config.php';
 require './config/db.php';
 
+// Checks if id is set 
+// For update post
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
@@ -12,6 +14,7 @@ if (isset($_GET['id'])) {
 
 <?php
 require './config/db.php';
+// If user submits updated content
 if (isset($_POST['submit'])) {
     $content = mysqli_real_escape_string($conn, $_POST['content']);
 
