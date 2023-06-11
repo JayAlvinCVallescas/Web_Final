@@ -4,7 +4,7 @@ if (isset($_POST['submit-msg'])) {
     require 'config\db.php';
     $fname = mysqli_real_escape_string($conn, $_POST['fname']);
     $lname = mysqli_real_escape_string($conn, $_POST['lname']);
-    $number = mysqli_real_escape_string($conn, $_POST['number']);
+    $number = mysqli_real_escape_string($conn, $_POST['phone_number']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $message = mysqli_real_escape_string($conn, $_POST['message']);
 
@@ -40,7 +40,7 @@ if (isset($_POST['submit-msg'])) {
             <input type="text" name="lname" placeholder="Last Name" required>
         </div>
         <div class="contact-input">
-            <input type="number" name="number" placeholder="Phone Number" required>
+            <input type="number" name="phone_number" placeholder="Phone Number" required>
             <input type="email" name="email" placeholder="Email" required>
         </div>
         <textarea name="message" id="" cols="30" rows="10"></textarea>

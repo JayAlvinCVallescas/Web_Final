@@ -74,6 +74,7 @@ img{
 
 .market-click-bottom{
    position: absolute;
+   bottom: 0;
 }
 
 .market-click-bottom button{

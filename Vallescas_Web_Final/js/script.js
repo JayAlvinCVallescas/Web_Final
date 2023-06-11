@@ -138,6 +138,7 @@ function clickMarketSix(){
 const slider = document.querySelector(".second-container-slider");
 const arrowBtns = document.querySelectorAll(".market-second-container i");
 const firstCardWidth = slider.querySelector(".card").offsetWidth;
+// array
 const carouselChildrens = [...slider.children];
 
 //when user didn't drag over the items

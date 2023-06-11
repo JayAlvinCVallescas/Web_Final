@@ -51,6 +51,8 @@ session_start();
                 }
                 ?>
             </div>
-            <img src="../images/menu_white.jpeg" alt="" class="menu">
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+            </div>
         </div>
     </header>

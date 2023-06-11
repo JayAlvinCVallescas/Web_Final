@@ -109,8 +109,13 @@ nav span{
     height: 2.5em;
     cursor: pointer;
     display: none;
-    
+    text-align: center;
 }
+
+.menu i{
+    font-size: 2rem;
+}
+
 
 .nav-container .sign-btn{
     background: none;
@@ -755,7 +760,9 @@ p.slide-right, button.slide-right{
 
 @media only screen and (max-width: 1000px){
 .menu{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 2;
 }
 
